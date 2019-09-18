@@ -41,6 +41,8 @@ public class PlayerService {
         return this.playerRepository.findAll();
     }
 
+
+    // Edit after added new Models who use Player
     public HttpStatus deletePlayer(Long id) {
         Optional<Player> optionalPlayer = this.playerRepository.findById(id);
         if(optionalPlayer.isPresent()){
